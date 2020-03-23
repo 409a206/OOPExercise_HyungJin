@@ -27,4 +27,29 @@ public class MemberManager {
 		
 	}
 
+	public void updatePwd() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void updateName() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void updateEmail() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void deleteOne() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public void deleteAll() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

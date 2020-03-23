@@ -26,22 +26,30 @@ public class MemberManager {
 		char gender = sc.next().charAt(0);
 		System.out.print("이메일 입력");
 		String email = sc.next();
-		int i = 0;
 		Member newMember = new Member(userId, userPwd, userName, age, gender, email);
-		m[i] = newMember;
-		i++;
+		m[ctn] = newMember;
+		ctn++;
 		System.out.println("입력이 완료되었습니다. 메인메뉴로 돌아갑니다.");
 		return;
 		
 	}
 
 	public void printAllMember() {
-		// TODO Auto-generated method stub
+		
 		
 	}
 
 	public void searchId() {
-		// TODO Auto-generated method stub
+		System.out.print("검색할 아이디를 입력하시오 : ");
+		String userId = sc.next();
+		
+		for(int i = 0; i < m.length; i++) {
+			if(m[i].getUserId().equals(userId)) {
+				System.out.println(m[i]);
+				return;
+			}
+		}
+		System.out.println("검색한 회원 정보가 존재하지 않습니다.");
 		
 	}
 
